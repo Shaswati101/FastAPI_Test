@@ -71,3 +71,5 @@ def get_user(request: Request, name: str = Form(...), password: str = Form(...))
             return data.split(",")[0]
         else:
             return "Invalid Credentials"
+
+handler = app
