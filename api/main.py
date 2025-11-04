@@ -72,4 +72,8 @@ def get_user(request: Request, name: str = Form(...), password: str = Form(...))
         else:
             return "Invalid Credentials"
 
-handler = app
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app)
+
